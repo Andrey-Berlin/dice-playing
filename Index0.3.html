@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>dice playing🎲</title>
+    <style type="text/css" media="all">
+      body{
+        text-align: center;
+      }
+      h2{
+        
+        font-size: 50px;
+        
+      }
+      
+      button{
+        width: 150px;
+        height: 150px;
+        font-size: 30px;
+        background:#82a434;
+        color:#d0ce7e;
+      }
+      p{
+       padding: 0% 10% 0% 0%;
+        
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      
+    </header>
+    <section>
+      <h1>Классический игральный кубик</h1>
+      <h2>🎲</h2>
+    </section>
+   <hr />
+   <button type="button" id = "btn">БРОСЬ КУБИК</button>
+   <hr />
+    <p id = "p1"></p>
+   <hr />
+   </section>  
+   <footer>
+     
+   </footer>
+  </body>
+  <script type="text/javascript" charset="utf-8">
+  let btn = document.getElementById('btn');
+  btn.onclick = function (){
+  let randomNumber = Math.floor(Math.random()*6)+0;
+    console.log(randomNumber);
+ /* let mat_random = Math.random()+1;
+  console.log(mat_random);*/
+  if (randomNumber == 0) {
+    let yes = document.getElementById("p1");
+    yes.innerHTML=`<svg width="250" height="250">
+  <rect x="70" y="70" rx="40" ry="40" width="150" height="150"
+  style="fill:#009999;stroke:black;stroke-width:5;opacity:0.5" />
+
+<circle cx="145" cy="145" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+</svg>`;
+  } else if (randomNumber == 1) {
+    let yes = document.getElementById("p1");
+    yes.innerHTML=`<svg width="250" height="250">
+  <rect x="70" y="70" rx="40" ry="40" width="150" height="150"
+  style="fill:#009999;stroke:black;stroke-width:5;opacity:0.5" />
+
+<circle cx="145" cy="120" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="145" cy="165" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+</svg>`;
+    
+  } else if (randomNumber == 2)  {
+    let yes = document.getElementById("p1");
+    yes.innerHTML=`<svg width="250" height="250">
+
+  <rect x="70" y="70" rx="40" ry="40" width="150" height="150"
+
+  style="fill:#009999;stroke:black;stroke-width:5;opacity:0.5" />
+
+<circle cx="185" cy="105" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="145" cy="145" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="105" cy="185" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+</svg>`;
+  }else if (randomNumber == 3)  {
+    let yes = document.getElementById("p1");
+    yes.innerHTML=`<svg width="250" height="250">
+  <rect x="70" y="70" rx="40" ry="40" width="150" height="150"
+  style="fill:#009999;stroke:black;stroke-width:5;opacity:0.5" />
+
+<circle cx="185" cy="105" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="105" cy="105" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="105" cy="185" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="185" cy="185" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+</svg>`;
+  }else if (randomNumber == 4)  {
+    let yes = document.getElementById("p1");
+    yes.innerHTML=`<svg width="250" height="250">
+  <rect x="70" y="70" rx="40" ry="40" width="150" height="150"
+  style="fill:#009999;stroke:black;stroke-width:5;opacity:0.5" />
+
+<circle cx="185" cy="105" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="105" cy="105" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="105" cy="185" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="185" cy="185" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="145" cy="145" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+
+</svg>`;
+  }else if (randomNumber == 5)  {
+    let yes = document.getElementById("p1");
+    yes.innerHTML=`<svg width="250" height="250">
+  <rect x="70" y="70" rx="40" ry="40" width="150" height="150"
+  style="fill:#009999;stroke:black;stroke-width:5;opacity:0.5" />
+
+<circle cx="185" cy="105" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="105" cy="105" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="105" cy="185" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="185" cy="185" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="185" cy="145" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+<circle cx="105" cy="145" r="15" stroke="black" stroke-width="4" fill="#ffffcc" />
+
+
+</svg>
+`;
+  }
+  }
+  </script>
+</html>
